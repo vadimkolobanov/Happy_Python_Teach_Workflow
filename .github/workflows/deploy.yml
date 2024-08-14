@@ -22,4 +22,6 @@ jobs:
         script: |
           cd /home/Happy_Python_Teach_Workflow
           git pull origin main
+          source venv/bin/activate
+          pip install -r requirements.txt
           sudo systemctl restart happt.service

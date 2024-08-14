@@ -9,7 +9,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'text/html')
         self.end_headers()
-        self.wfile.write(b"<h1>Hello Happy Python</h1>")
+        self.wfile.write(b"<h1>Hello Happy Python with Autodeploy</h1>")
 
 
 with socketserver.TCPServer(("", PORT), MyHandler) as httpd:
