@@ -21,4 +21,4 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY}}
         script: |
           git pull origin main
-          sudo systemctl restart my_python_server.service
+          sudo systemctl restart happt.service
